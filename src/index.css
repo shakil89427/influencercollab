@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+/* Responsive Container Start */
+.r-box {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 639px) {
+  .r-box {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .r-box {
+    width: 610px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .r-box {
+    width: 720px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .r-box {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .r-box {
+    width: 1200px;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .r-box {
+    width: 1360px;
+  }
+}
+/* Responsive Container End */
